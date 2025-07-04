@@ -13,12 +13,12 @@ GameScene::~GameScene() {
 	// 四角形
 	Model2::StaticFinalize();
 }
-/////
+
 //初期化
 void GameScene::Initialize() 
 {
 	// 3Dモデルデータの生成
-	modelParticle_ = Model2::CreateSphere(4, 4);
+	modelParticle_ = Model2::CreateSquare();
 	
 	//カメラの初期化
 	camera_.Initialize();

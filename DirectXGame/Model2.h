@@ -128,7 +128,7 @@ public: // 静的メンバ関数
 	/// <param name="modelname">エッジ平滑化フラグ</param>
 	/// <returns>生成されたモデル</returns>
 	static Model2* CreateFromOBJ(const std::string& modelname, bool smoothing = false);
-
+	static Model2* CreateSquare();
 	/// <summary>
 	/// 球モデル生成
 	/// </summary>
