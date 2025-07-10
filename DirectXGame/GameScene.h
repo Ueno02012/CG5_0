@@ -17,6 +17,7 @@ public:
 
 	//描画
 	void Draw();
+
 private:
 	// テクスチャハンドル
 	uint32_t textureHandle_ = 0;
