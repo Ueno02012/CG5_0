@@ -17,11 +17,10 @@ void SetupPipelineState(PipelineState& pipelineState, RootSignature& rs, Shader&
 int WINAPI WinMain(_In_ HINSTANCE, _In_opt_ HINSTANCE, _In_ LPSTR, _In_ int) {
 
 	////エンジンの初期化
-	KamataEngine::Initialize(L"LE3D_08_シマノ_ユウト_CG5");
+	KamataEngine::Initialize(L"LE3D_02_ユウキ_ユウキ");
 
 	// DirectXCommonインスタンスの取得
 	DirectXCommon* dxCommon = DirectXCommon::GetInstance();
-
 	// DirectXCommonクラスが管理している、ウインドウの幅と高さの値の取得
 	int32_t w = dxCommon->GetBackBufferWidth();
 	int32_t h = dxCommon->GetBackBufferHeight();
@@ -72,7 +71,6 @@ int WINAPI WinMain(_In_ HINSTANCE, _In_opt_ HINSTANCE, _In_ LPSTR, _In_ int) {
 	    0, 1, 2, // 下にある三角形
 	    2, 1, 3  // 上にある三角形
 	};
-
 	// VertexBuffer(VertexResource,VertexResourceView)の生成
 	VertexBuffer vb;
 	// vb.Create(sizeof(Vector4) * 3, sizeof(Vector4));
@@ -105,6 +103,7 @@ int WINAPI WinMain(_In_ HINSTANCE, _In_opt_ HINSTANCE, _In_ LPSTR, _In_ int) {
 		}
 		// ゲームシーンの更新
 		gameScene->Update();
+
 		// 描画開始
 		dxCommon->PreDraw();
 
@@ -125,10 +124,10 @@ int WINAPI WinMain(_In_ HINSTANCE, _In_opt_ HINSTANCE, _In_ LPSTR, _In_ int) {
 		// 描画終了
 		dxCommon->PostDraw();
 	}
-
+	
 	// ゲームシーンの開放
 	delete gameScene;
-
+	
 	// nullptrの代入
 	gameScene = nullptr;
 
