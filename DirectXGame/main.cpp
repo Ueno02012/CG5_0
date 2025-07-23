@@ -116,7 +116,7 @@ int WINAPI WinMain(_In_ HINSTANCE, _In_opt_ HINSTANCE, _In_ LPSTR, _In_ int) {
 	// Resource生成、Heap生成、View生成で再利用される変数の準備-------------------
 	ID3D12Device* device = dxCommon->GetDevice();
 
-	// RenderTexture関係　★00_09追加
+	// RenderTexture関係
 	// 0.RenderTextureResourceの作成
 	// 画面クリア色　※分かりやすいように赤とする
 	const FLOAT kRenderTargetClearColor[4] = {1.0f, 0.0f, 0.0f, 1.0f};
