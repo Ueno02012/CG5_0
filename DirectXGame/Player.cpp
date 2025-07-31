@@ -1,11 +1,13 @@
 #include "Player.h"
 #include <input/Input.h>
+#include <cassert>
 using namespace KamataEngine;
 
 Player::Player() {}
 
 Player::~Player() 
 {
+	delete model_;
 }
 
 //初期化

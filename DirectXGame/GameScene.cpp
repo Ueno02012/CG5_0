@@ -8,16 +8,14 @@ GameScene::~GameScene() {
 	// デストラクタ
 	delete sprite_;
 	delete stage_;
-	delete modelPlayer_;
-	delete player_;
-	delete gauge_;
 	delete camera_;
+	delete modelPlayer_;
 }
 
 void GameScene::Initialize() {
 
 	//ファイル名を指定してテクスチャを読み込む
-	//textureHandle_ = TextureManager::Load("Title.png");
+	textureHandle_ = TextureManager::Load("Title.png");
 	textureHandle_ = TextureManager::Load("Stage.png");
 	// スプライトインスタンスの生成
 	sprite_ = Sprite::Create(textureHandle_, {0, 0});//タイトル
@@ -31,8 +29,8 @@ void GameScene::Initialize() {
 	camera_ = new Camera();
 	camera_->Initialize();
 
-	modelPlayer_ = Model::CreateFromOBJ("player", true);
 
+	modelPlayer_ = Model::CreateFromOBJ("player", true);
 	player_ = new Player();
 	player_->Initialize(modelPlayer_, camera_, {0, 0, 0});
 
@@ -40,13 +38,18 @@ void GameScene::Initialize() {
 	gauge_ = new Gauge();
 	gauge_->Initialize();
 
+	//数値
+	number_ = new Number();
 	number_->Initialize();
 }
 
+// メンバー変数に追加
+int frameCount = 0;
 
 
 
 void GameScene::Update() {
+	
 	player_->Update();
 
 	frameCount++;
@@ -98,9 +101,9 @@ void GameScene::Draw()
 	//ゲージ
 	gauge_->Draw();
 
+	//数値
 	number_->Draw();
 
 	// スプライト描画後処理(背景)
 	Sprite::PostDraw();
-
 }

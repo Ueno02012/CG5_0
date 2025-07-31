@@ -2,10 +2,10 @@
 #include <KamataEngine.h>
 
 class Number {
+
 public:
 	Number();
 	~Number();
-
 
 	void Initialize();
 
@@ -24,23 +24,4 @@ private:
 
 	int number_ = 0;       // 表示する現在の数値
 	int frameCounter_ = 0; // カウント用フレームカウンター
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 };

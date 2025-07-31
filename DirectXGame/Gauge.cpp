@@ -4,12 +4,7 @@ using namespace KamataEngine;
 
 Gauge::Gauge() {}
 
-Gauge::~Gauge() { 
-	for (auto sprite : GaugeSprite_) {
-		delete sprite;
-	}
-	GaugeSprite_.clear(); 
-}
+Gauge::~Gauge() {}
 
 void Gauge::Initialize() {
 	textureHandle_ = TextureManager::Load("./Resources/white1x1.png");

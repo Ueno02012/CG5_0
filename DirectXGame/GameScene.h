@@ -3,7 +3,7 @@
 #include "Stage.h"
 #include "Player.h"
 #include"Gauge.h"
-#include "Number.h"
+#include"Number.h"
 class GameScene 
 {
 public:
@@ -39,12 +39,11 @@ private:
 	Player* player_ = nullptr;
 
 	// ビュープロジェクション生成
-	KamataEngine::Camera* camera_ = nullptr;
+	KamataEngine::Camera* camera_;
 
 	//ゲージ
 	Gauge* gauge_ = nullptr;
-	// メンバー変数に追加
-	int frameCount = 0;
-	// ナンバー
+
+	//ナンバー
 	Number* number_ = nullptr;
 };
