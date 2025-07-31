@@ -1,8 +1,15 @@
 #include "Stage.h"
 using namespace KamataEngine;
 
-void Stage::Initialize(uint32_t textureHandle) 
-{
+Stage::Stage() {}
+
+Stage::~Stage() { 
+	delete sprite_;
+	delete sprite2_;
+
+}
+
+void Stage::Initialize(uint32_t textureHandle) {
 	textureHandle_=textureHandle;
 
 	// スプライトインスタンスの生成
