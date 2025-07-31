@@ -110,6 +110,7 @@
     <ClCompile Include="Gauge.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MathUtilityText.cpp" />
+    <ClCompile Include="Model2.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="Stage.cpp" />
     <ClCompile Include="WorldTransformEX.cpp" />

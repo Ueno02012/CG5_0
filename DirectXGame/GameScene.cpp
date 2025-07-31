@@ -9,6 +9,7 @@ GameScene::~GameScene() {
 	delete sprite_;
 	delete stage_;
 	delete modelPlayer_;
+	delete player_;
 	delete gauge_;
 	delete camera_;
 }

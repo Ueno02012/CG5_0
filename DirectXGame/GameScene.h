@@ -38,7 +38,7 @@ private:
 	Player* player_ = nullptr;
 
 	// ビュープロジェクション生成
-	KamataEngine::Camera* camera_;
+	KamataEngine::Camera* camera_ = nullptr;
 
 	//ゲージ
 	Gauge* gauge_ = nullptr;
