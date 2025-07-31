@@ -42,4 +42,6 @@ private:
 
 	//ゲージ
 	Gauge* gauge_ = nullptr;
+	// メンバー変数に追加
+	int frameCount = 0;
 };

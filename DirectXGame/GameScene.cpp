@@ -9,7 +9,7 @@ GameScene::~GameScene() {
 	delete sprite_;
 	delete stage_;
 	delete camera_;
-	delete player_;
+	delete modelPlayer_;
 	delete gauge_;
 }
 
@@ -30,8 +30,8 @@ void GameScene::Initialize() {
 	camera_ = new Camera();
 	camera_->Initialize();
 
-
 	modelPlayer_ = Model::CreateFromOBJ("player", true);
+
 	player_ = new Player();
 	player_->Initialize(modelPlayer_, camera_, {0, 0, 0});
 
@@ -40,8 +40,6 @@ void GameScene::Initialize() {
 	gauge_->Initialize();
 }
 
-// メンバー変数に追加
-int frameCount = 0;
 
 
 
