@@ -112,6 +112,7 @@
     <ClCompile Include="MathUtilityText.cpp" />
     <ClCompile Include="Model2.cpp" />
     <ClCompile Include="Player.cpp" />
+    <ClCompile Include="Sprite.cpp" />
     <ClCompile Include="Stage.cpp" />
     <ClCompile Include="WorldTransformEX.cpp" />
   </ItemGroup>
@@ -196,6 +197,7 @@
     <ClInclude Include="Input.h" />
     <ClInclude Include="MathUtilityText.h" />
     <ClInclude Include="Player.h" />
+    <ClInclude Include="Number.h" />
     <ClInclude Include="Stage.h" />
     <ClInclude Include="worldTransform.h" />
   </ItemGroup>
