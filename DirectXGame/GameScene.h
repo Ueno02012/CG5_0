@@ -1,6 +1,8 @@
 #pragma once
 #include"KamataEngine.h"
 #include "Stage.h"
+#include "Player.h"
+#include"Gauge.h"
 class GameScene 
 {
 public:
@@ -18,14 +20,26 @@ public:
 
 	//描画
 	void Draw();
-
 private:
 	// テクスチャハンドル
 	uint32_t textureHandle_ = 0;
 
-	//スプライト
+	//スプライト(背景)
 	KamataEngine::Sprite* sprite_ = nullptr;
 
+	//ステージ
 	Stage* stage_ = nullptr;
-	int frameCount = 0;
+
+	// プレイヤーモデル
+	KamataEngine::Model* model_ = nullptr;
+	KamataEngine::Model* modelPlayer_ = nullptr;
+
+	// プレイヤーの生成
+	Player* player_ = nullptr;
+
+	// ビュープロジェクション生成
+	KamataEngine::Camera* camera_;
+
+	//ゲージ
+	Gauge* gauge_ = nullptr;
 };

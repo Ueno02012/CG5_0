@@ -1,19 +1,14 @@
 #pragma once
-#include "KamataEngine.h"
-class Stage {
+#include"KamataEngine.h"
+class Stage
+{
 public:
-
-	Stage();
-
-	~Stage();
-
-	// 初期化
+	//初期化
 	void Initialize(uint32_t textureHandle);
-	// 更新
+	//更新
 	void Update();
-	// 描画
+	//描画
 	void Draw();
-
 private:
 	// テクスチャハンドル
 	uint32_t textureHandle_ = 0;
