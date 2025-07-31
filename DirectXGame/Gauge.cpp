@@ -4,7 +4,8 @@ using namespace KamataEngine;
 
 Gauge::Gauge() {}
 
-Gauge::~Gauge() {}
+Gauge::~Gauge() { 
+}
 
 void Gauge::Initialize() {
 	textureHandle_ = TextureManager::Load("./Resources/white1x1.png");

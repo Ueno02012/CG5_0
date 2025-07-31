@@ -8,9 +8,9 @@ GameScene::~GameScene() {
 	// デストラクタ
 	delete sprite_;
 	delete stage_;
-	delete camera_;
 	delete modelPlayer_;
 	delete gauge_;
+	delete camera_;
 }
 
 void GameScene::Initialize() {

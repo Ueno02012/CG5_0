@@ -18,7 +18,7 @@ public:
 private:
 	std::vector<KamataEngine::Sprite*> GaugeSprite_;
 
-	uint32_t textureHandle_;
+	uint32_t textureHandle_ = 0;
 
 	int red = 0;
 	int Green = 1;
