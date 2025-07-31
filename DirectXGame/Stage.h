@@ -3,6 +3,11 @@
 class Stage
 {
 public:
+
+	Stage();
+	~Stage();
+
+
 	//初期化
 	void Initialize(uint32_t textureHandle);
 	//更新

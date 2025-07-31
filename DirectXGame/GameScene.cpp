@@ -12,12 +12,12 @@ GameScene::~GameScene() {
 	delete player_;
 	delete gauge_;
 	delete camera_;
+	delete number_;
 }
 
 void GameScene::Initialize() {
 
 	//ファイル名を指定してテクスチャを読み込む
-	textureHandle_ = TextureManager::Load("Title.png");
 	textureHandle_ = TextureManager::Load("Stage.png");
 	// スプライトインスタンスの生成
 	sprite_ = Sprite::Create(textureHandle_, {0, 0});//タイトル

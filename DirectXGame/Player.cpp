@@ -7,7 +7,6 @@ Player::Player() {}
 
 Player::~Player() 
 {
-	delete model_;
 }
 
 //初期化
